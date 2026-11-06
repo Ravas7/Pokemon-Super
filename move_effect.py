@@ -4,7 +4,7 @@ class MoveEffect:
     def __init__(self):
         pass
     def apply_effect(self, pokemon_user, pokemon_enemy):
-        pass
+        raise NotImplementedError("Subclasses must implement apply_effect")
 
 class Damage(MoveEffect):
     def __init__(self, power):
