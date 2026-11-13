@@ -92,3 +92,8 @@ thunder_wave = StatsCondition(condition="paralysis", effect_chance=100, who_gets
 thunder_wave.apply_effect(firestorm, veterano)
 thunder_wave.apply_effect(veterano, firestorm)
 
+for i in range(20):
+    ember.use_attack(firestorm, veterano)
+
+never_hits = Move("Test", "Normal", 0, 10, [Damage(40)])
+never_hits.use_attack(firestorm, veterano)
